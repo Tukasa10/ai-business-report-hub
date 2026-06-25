@@ -32,6 +32,15 @@
 - [x] CSV出力ボタンでCSVをダウンロードできる
 - [x] PDF印刷向けCSSが存在する
 
+## 公開URLでの確認項目
+
+- [x] GitHub PagesデモURLにアクセスできる
+- [x] ページタイトル「AI業務レポート自動生成ハブ」が表示される
+- [x] 「サンプル読込」「CSV選択」「CSV出力」「PDF印刷」の操作ボタンが表示される
+- [x] 「日別売上推移」「商品別売上」「チャネル別集計」の主要セクションが表示される
+- [x] 「AI風分析コメント」「異常値・注意点」「出力対象」が表示される
+- [x] GitHubリポジトリがPublicで表示される
+
 ## 品質ゲート
 
 - [x] サンプルCSVで動く
@@ -62,9 +71,9 @@
 - [x] 実画面スクリーンショットをREADMEに反映済み
 - [x] Git初期化済み
 - [x] 初回コミット対象をステージ済み
-- [ ] GitHubリポジトリ作成
-- [ ] GitHub Pages公開
-- [ ] 公開URLでの目視確認
+- [x] GitHubリポジトリ作成
+- [x] GitHub Pages公開
+- [x] 公開URLでの目視確認
 
 ## 確認メモ
 
@@ -76,3 +85,5 @@
 - 2026-06-25: 公開前チェックとしてREADME/PORTFOLIO補強、`.gitignore`、スクリーンショット配置場所を追加。
 - 2026-06-25: Gitを `main` ブランチで初期化し、初回コミット対象をステージ。
 - 2026-06-25: `docs/screenshots/dashboard.png` を撮影し、READMEの画像参照を実スクリーンショットへ差し替え。
+- 2026-06-26: GitHub Pages公開URL `https://Tukasa10.github.io/ai-business-report-hub/` を確認。主要見出し、操作ボタン、主要セクションが表示されることを確認。
+- 2026-06-26: GitHubリポジトリ `https://github.com/Tukasa10/ai-business-report-hub` がPublicで表示されることを確認。

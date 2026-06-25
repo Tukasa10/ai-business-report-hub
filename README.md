@@ -6,6 +6,11 @@ EC売上・広告CSVを読み込み、売上サマリー、商品別ランキン
 
 実データ、APIキー、外部AI APIは使いません。サンプルCSVだけで再現できるため、応募先や面談相手に安全に見せられます。
 
+## 公開URL
+
+- GitHub: https://github.com/Tukasa10/ai-business-report-hub
+- GitHub Pagesデモ: https://Tukasa10.github.io/ai-business-report-hub/
+
 ![AI業務レポート自動生成ハブのダッシュボード](docs/screenshots/dashboard.png)
 
 > サンプルCSVを読み込んだ状態のダッシュボードです。KPI、日別推移、商品別・チャネル別レポートを確認できます。
@@ -22,8 +27,8 @@ EC売上・広告CSVを読み込み、売上サマリー、商品別ランキン
 
 ## デモで確認する流れ
 
-1. ローカルサーバを起動する
-2. ブラウザで `http://127.0.0.1:4173` を開く
+1. GitHub Pagesデモを開く: `https://Tukasa10.github.io/ai-business-report-hub/`
+2. 必要に応じてローカルサーバを起動し、`http://127.0.0.1:4173` を開く
 3. サンプルCSVが自動で読み込まれることを確認する
 4. KPI、日別推移、商品別ランキング、チャネル別集計を見る
 5. AI風分析コメント、異常値、次アクションを見る
@@ -94,10 +99,21 @@ CSVの必須列は [docs/data-schema.md](docs/data-schema.md) に整理してい
 
 このデモはビルド不要の静的サイトです。GitHub Pagesでは、リポジトリのルートを公開元にすれば動きます。
 
+- 公開URL: https://Tukasa10.github.io/ai-business-report-hub/
 - `index.html` からの参照は相対パスです
 - `src/`、`sample_data/`、`docs/` を同じ階層で公開します
 - 外部CDNや外部APIは使っていません
 - READMEには `docs/screenshots/dashboard.png` の実スクリーンショットを表示しています
+
+## GitHub Pages公開後の表示確認結果
+
+2026-06-26に公開URLを確認しました。
+
+- GitHub PagesのURLへアクセスできる
+- ページタイトル「AI業務レポート自動生成ハブ」が表示される
+- 「サンプル読込」「CSV選択」「CSV出力」「PDF印刷」の操作ボタンが表示される
+- 「日別売上推移」「商品別売上」「チャネル別集計」「AI風分析コメント」「異常値・注意点」「出力対象」の主要セクションが表示される
+- GitHubリポジトリがPublicで表示される
 
 ## 主な構成
 

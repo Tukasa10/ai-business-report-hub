@@ -4,6 +4,11 @@
 
 AI業務レポート自動生成ハブ
 
+## 公開URL
+
+- GitHub: https://github.com/Tukasa10/ai-business-report-hub
+- GitHub Pagesデモ: https://Tukasa10.github.io/ai-business-report-hub/
+
 EC売上・広告データを想定したCSVを読み込み、売上、注文件数、広告費、CVR、CPA、ROAS、商品別ランキング、チャネル別集計、日別推移を自動集計し、AI風の分析コメントと改善提案を生成するローカルデモです。
 
 発注者に対しては、「CSVを集計して表にする」だけでなく、業務担当者が次に見るべき指標、異常値、改善施策まで一画面で確認できるレポート自動化サンプルとして見せられます。
