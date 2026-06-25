@@ -1,0 +1,19 @@
+{
+  "name": "ai-business-report-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI業務レポート自動生成ハブ - EC売上・広告CSVの集計、可視化、AI風分析コメントを行うローカルデモ",
+  "scripts": {
+    "dev": "node scripts/devServer.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "csv",
+    "report",
+    "dashboard",
+    "portfolio",
+    "analytics"
+  ],
+  "license": "UNLICENSED"
+}

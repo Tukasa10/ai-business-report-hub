@@ -1,0 +1,31 @@
+export const SAMPLE_CSV = `date,channel,product_name,orders,revenue,ad_spend,impressions,clicks,conversions,refunds
+2026-05-01,Google Ads,Starter Coffee Set,18,97200,28000,42000,1180,42,1
+2026-05-01,Instagram,Premium Matcha Box,9,81000,14000,26000,760,22,0
+2026-05-01,Email,Refill Pack,24,96000,2500,7000,540,34,1
+2026-05-02,Google Ads,Starter Coffee Set,20,108000,30000,44000,1240,45,0
+2026-05-02,Organic,Seasonal Gift Box,12,132000,0,9100,620,28,1
+2026-05-02,Instagram,Premium Matcha Box,11,99000,16000,28000,820,25,0
+2026-05-03,Google Ads,Starter Coffee Set,21,113400,31000,45000,1270,48,0
+2026-05-03,Instagram,Trial Tea Bags,6,18000,23000,21000,430,0,2
+2026-05-03,Email,Refill Pack,28,112000,2800,7600,590,39,0
+2026-05-04,Organic,Seasonal Gift Box,14,154000,0,9800,680,32,1
+2026-05-04,Google Ads,Starter Coffee Set,22,118800,32000,47000,1320,50,0
+2026-05-04,Instagram,Premium Matcha Box,13,117000,15000,29000,850,28,0
+2026-05-05,Google Ads,Starter Coffee Set,19,102600,33000,46000,1210,44,0
+2026-05-05,Instagram,Trial Tea Bags,7,21000,24000,22000,470,0,1
+2026-05-05,Email,Refill Pack,32,128000,3000,8200,650,44,
+2026-05-06,Organic,Seasonal Gift Box,16,176000,0,10500,720,36,1
+2026-05-06,Google Ads,Starter Coffee Set,24,129600,35000,49000,1380,55,0
+2026-05-06,Instagram,Premium Matcha Box,14,126000,16000,30000,910,32,0
+2026-05-07,Google Ads,Starter Coffee Set,11,59400,36000,48000,1160,24,0
+2026-05-07,Instagram,Trial Tea Bags,5,15000,26000,24000,510,0,1
+2026-05-07,Email,Refill Pack,30,120000,3200,8500,630,41,0
+2026-05-08,Organic,Seasonal Gift Box,20,220000,0,11800,820,44,0
+2026-05-08,Google Ads,Starter Coffee Set,27,145800,37000,51000,1480,62,0
+2026-05-08,Instagram,Premium Matcha Box,17,153000,17000,32000,980,38,0
+2026-05-09,Google Ads,Starter Coffee Set,28,151200,38000,52000,1500,65,0
+2026-05-09,Instagram,Trial Tea Bags,4,12000,27000,25000,520,0,1
+2026-05-09,Email,Refill Pack,35,140000,3500,9000,700,48,0
+2026-05-10,Organic,Seasonal Gift Box,22,242000,0,12300,870,50,1
+2026-05-10,Google Ads,Starter Coffee Set,30,162000,39000,54000,1590,70,0
+2026-05-10,Instagram,Premium Matcha Box,19,171000,18000,34000,1040,43,0`;

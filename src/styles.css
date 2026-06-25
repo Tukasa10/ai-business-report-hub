@@ -1,0 +1,424 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-soft: #fbfaf6;
+  --ink: #293241;
+  --muted: #5f6c7b;
+  --line: #d6dde4;
+  --green: #159268;
+  --teal: #277da1;
+  --amber: #d97706;
+  --red: #c2410c;
+  --shadow: 0 18px 45px rgba(41, 50, 65, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+button,
+.file-button {
+  min-height: 42px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 8px 14px;
+  text-align: center;
+}
+
+button:hover,
+.file-button:hover {
+  background: #111827;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+
+.file-button input {
+  inline-size: 1px;
+  block-size: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.app-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px clamp(18px, 4vw, 56px);
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow,
+.section-kicker,
+.status-label {
+  margin: 0;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(30px, 5vw, 54px);
+  line-height: 1.06;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.lead {
+  max-width: 720px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 320px;
+}
+
+.report-shell {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 24px clamp(16px, 3vw, 42px) 48px;
+}
+
+.status-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.status-strip > div,
+.kpi-card,
+.panel,
+.empty-state {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.status-strip > div {
+  min-height: 72px;
+  padding: 14px 16px;
+}
+
+.status-strip strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 18px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.kpi-card {
+  min-height: 116px;
+  padding: 18px;
+  border-top: 5px solid var(--ink);
+}
+
+.kpi-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.kpi-card strong {
+  display: block;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.1;
+}
+
+.kpi-card.green {
+  border-top-color: var(--green);
+}
+
+.kpi-card.teal {
+  border-top-color: var(--teal);
+}
+
+.kpi-card.amber {
+  border-top-color: var(--amber);
+}
+
+.kpi-card.red {
+  border-top-color: var(--red);
+}
+
+.report-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.panel {
+  min-width: 0;
+  padding: 20px;
+}
+
+.panel.wide {
+  grid-column: 1 / -1;
+}
+
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  border-radius: 999px;
+  background: #edf7f2;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 6px 10px;
+}
+
+.chart-wrap {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.compact canvas {
+  max-height: 330px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 8px;
+  text-align: right;
+  vertical-align: top;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+th {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.insight-summary {
+  border-left: 5px solid var(--green);
+  background: var(--surface-soft);
+  padding: 16px 18px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.insight-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.insight-list,
+.alert-list,
+.export-preview ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.insight-list li,
+.alert-list li,
+.export-preview li {
+  margin-bottom: 10px;
+}
+
+.alert-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.alert-list li {
+  border-left: 5px solid var(--teal);
+  background: var(--surface-soft);
+  padding: 12px 14px;
+}
+
+.alert-list li.high {
+  border-left-color: var(--red);
+}
+
+.alert-list li.medium {
+  border-left-color: var(--amber);
+}
+
+.alert-list strong,
+.alert-list span {
+  display: block;
+}
+
+.alert-list span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  min-height: 180px;
+  padding: 28px;
+}
+
+.empty-state.error {
+  border-color: rgba(194, 65, 12, 0.35);
+}
+
+.export-preview p {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 920px) {
+  .app-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .header-actions {
+    justify-content: stretch;
+    min-width: 0;
+  }
+
+  .header-actions > * {
+    flex: 1 1 150px;
+  }
+
+  .status-strip,
+  .kpi-grid,
+  .report-grid,
+  .insight-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+  }
+
+  button,
+  .file-button {
+    display: none;
+  }
+
+  .app-header {
+    padding: 0 0 12px;
+    border-bottom: 2px solid #111;
+  }
+
+  .lead {
+    color: #333;
+  }
+
+  .report-shell {
+    padding: 14px 0 0;
+  }
+
+  .status-strip,
+  .kpi-grid {
+    break-inside: avoid;
+  }
+
+  .panel,
+  .kpi-card,
+  .status-strip > div {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-wrap {
+    max-height: 260px;
+  }
+}
