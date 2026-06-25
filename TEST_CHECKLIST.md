@@ -2,7 +2,7 @@
 
 ## 自動テスト
 
-- [ ] `npm test` が通る
+- [x] `npm test` が通る
 - [x] `tests/browser-test-runner.html` が全件合格する
 - [x] CSVパーサーが正常CSVを読み込める
 - [x] 欠損数値を0として扱い警告を出す
@@ -80,10 +80,11 @@
 - 2026-06-25: Chromeヘッドレスで本体画面を確認。サンプルCSV30行、合計売上3,521,000円、ROAS6.40倍、canvasグラフ3点、AI風分析、改善提案、異常値表示を確認。
 - 2026-06-25: ブラウザテストランナーは10件すべて合格。
 - 2026-06-25: CSV出力は `ai_business_report_export.csv`、ヘッダー込み40行、`summary` / `product_ranking` / `recommendation` / `data_quality` を確認。
-- 2026-06-25: 現在のローカルシェルには `node` / `npm` がないため、`npm test` と `npm run dev` は未実行。Node.js導入環境向けのスクリプトとして残し、代替としてPythonサーバとブラウザテストで検証。
+- 2026-06-25: 当時のローカルシェルには `node` / `npm` がないため、`npm test` と `npm run dev` は未実行。Node.js導入環境向けのスクリプトとして残し、代替としてPythonサーバとブラウザテストで検証。
 - 2026-06-25: 手動確認リストと次回Codex指示を `docs/` に追加。
 - 2026-06-25: 公開前チェックとしてREADME/PORTFOLIO補強、`.gitignore`、スクリーンショット配置場所を追加。
 - 2026-06-25: Gitを `main` ブランチで初期化し、初回コミット対象をステージ。
 - 2026-06-25: `docs/screenshots/dashboard.png` を撮影し、READMEの画像参照を実スクリーンショットへ差し替え。
 - 2026-06-26: GitHub Pages公開URL `https://Tukasa10.github.io/ai-business-report-hub/` を確認。主要見出し、操作ボタン、主要セクションが表示されることを確認。
 - 2026-06-26: GitHubリポジトリ `https://github.com/Tukasa10/ai-business-report-hub` がPublicで表示されることを確認。
+- 2026-06-26: `npm test` を実行し、14件すべて合格。
